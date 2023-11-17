@@ -34,6 +34,14 @@
   "name": "@ozean/set-webm-duration",
   "author": "async-rustacean",
   "module": "dist/set-webm-duration.esm.js",
+  "homepage": "https://github.com/swnb/set-webm-duration",
+  "repository": "https://github.com/swnb/set-webm-duration",
+  "keywords": [
+    "webm",
+    "duration",
+    "decode",
+    "encode"
+  ],
   "size-limit": [
     {
       "path": "dist/set-webm-duration.cjs.production.min.js",
