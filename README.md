@@ -5,9 +5,13 @@ write duration into webm blob
 ```
 import { setWebmDuration } from '@ozean/set-webm-duration'
 
-const newWebmBlob = new Blob([setWebmDuration(webmBlob, 45296 * 1000)])
+const audioBuffer = await audioBlob.arrayBuffer()
 
-document.querySelector("audio")!.src = URL.createObjectURL(newWebmBlob)
+const newAudioBuffer = setWebmDuration(audioBuffer, 45296 * 1000)
+
+const newAudioBlob = new Blob([newAudioBuffer])
+
+document.querySelector("audio")!.src = URL.createObjectURL(newAudioBlob)
 ```
 
 ![](./img.png)
